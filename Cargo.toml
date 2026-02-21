@@ -1,0 +1,13 @@
+[package]
+name = "transcribe"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+iced = { version = "0.14", features = ["canvas", "tokio"] }
+tokio = { version = "1", features = ["rt-multi-thread"] }
+cpal = "0.17"
+symphonia = { version = "0.5", features = ["mp3", "flac", "pcm", "wav", "aac"] }
+soundtouch = "0.5"
+crossbeam-channel = "0.5"
+rfd = "0.15"
